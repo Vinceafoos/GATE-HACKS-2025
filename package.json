@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pitchy": "^4.1.0",
+    "react-router-dom": "^7.9.6"
+  }
+}
