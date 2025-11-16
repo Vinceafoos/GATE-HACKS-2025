@@ -208,9 +208,14 @@ select:hover {
 /* Lyrics area */
 .lyrics-panel {
   margin-top: 20px;
-  background: rgba(10, 5, 40, 0.7);
-  padding: 16px;
-  border-radius: 14px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.35);
+  text-align: left;
+
+  /* 🔥 make it a scrollable box */
+  max-height: 220px;      /* adjust this height as you like */
+  overflow-y: auto;       /* enables vertical scrolling */
 }
 
 .lyrics-label {
