@@ -55,222 +55,8 @@ const TWINKLE_DATA = {
 
 const FIREFLIES_DATA = {
   audioSrc: "/fireflies.mp3",
-
-  // One octave lower than before
-  minFreq: 130.81,   // C3  (was C4)
-  maxFreq: 246.94,   // B3  (was B4)
-
-  lines: [
-    // ---- Verse 1 ----
-    {
-      text: "You would not believe your eyes",
-      start: 22, end: 24.8,
-      targetFreq: 138.59, // C#3 (down from C#4)
-    },
-    {
-      text: "If ten million fireflies",
-      start: 24.8, end: 28.11,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "Lit up the world as I fell asleep",
-      start: 28.11, end: 32,
-      targetFreq: 130.81, // C3
-    },
-
-    {
-      text: "'Cause they fill the open air",
-      start: 32, end: 34.5,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "And leave teardrops everywhere",
-      start: 34.5, end: 37,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "You'd think me rude but I would just stand and stare",
-      start: 37, end: 42.5,
-      targetFreq: 130.81, // C3
-    },
-
-    // ---- Chorus ----
-    {
-      text: "I'd like to make myself believe",
-      start: 42.5, end: 46.5,
-      targetFreq: 184.99, // F#3
-    },
-    {
-      text: "That planet Earth turns slowly",
-      start: 46.5, end: 53.1,
-      targetFreq: 207.65, // G#3
-    },
-    {
-      text: "It's hard to say that I'd rather stay awake when I'm asleep",
-      start: 53.1, end: 58.7,
-      targetFreq: 246.94, // B3
-    },
-    {
-      text: "'Cause everything is never as it seems",
-      start: 58.7, end: 64,
-      targetFreq: 207.65, // G#3
-    },
-
-    // ---- Verse 2 ----
-    {
-      text: "'Cause I'd get a thousand hugs",
-      start: 64, end: 66.2,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "From ten thousand lightning bugs",
-      start: 66.2, end: 69.8,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "As they tried to teach me how to dance",
-      start: 69.8, end: 74.9,
-      targetFreq: 130.81, // C3
-    },
-    {
-      text: "A foxtrot above my head",
-      start: 74.9, end: 77.3,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "A sock hop beneath my bed",
-      start: 77.3, end: 79.3,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "A disco ball is just hanging by a thread (thread, thread)",
-      start: 79.3, end: 85,
-      targetFreq: 130.81, // C3
-    },
-
-    // ---- Chorus (2) ----
-    {
-      text: "I'd like to make myself believe",
-      start: 85, end: 89.3,
-      targetFreq: 184.99, // F#3
-    },
-    {
-      text: "That planet Earth turns slowly",
-      start: 89.3, end: 95.5,
-      targetFreq: 207.65, // G#3
-    },
-    {
-      text: "It's hard to say that I'd rather stay awake when I'm asleep",
-      start: 95.5, end: 100.2,
-      targetFreq: 246.94, // B3
-    },
-    {
-      text: "'Cause everything is never as it seems (when I fall asleep)",
-      start: 100.2, end: 109.1,
-      targetFreq: 207.65, // G#3
-    },
-
-    // ---- Bridge ----
-    {
-      text: "Leave my door open just a crack",
-      start: 109.1, end: 112.3,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "Please take me away from here",
-      start: 112.3, end: 114.8,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "'Cause I feel like such an insomniac",
-      start: 114.8, end: 118.3,
-      targetFreq: 130.81, // C3
-    },
-    {
-      text: "Please take me away from here",
-      start: 118.3, end: 120,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "Why do I tire of counting sheep?",
-      start: 120, end: 123.2,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "Please take me away from here",
-      start: 123.2, end: 125.7,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "When I'm far too tired to fall asleep",
-      start: 125.7, end: 130,
-      targetFreq: 130.81, // C3
-    },
-
-    // ---- Verse 3 / Outro ----
-    {
-      text: "To ten million fireflies",
-      start: 130, end: 133.2,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "I'm weird 'cause I hate goodbyes",
-      start: 133.2, end: 136,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "I got misty eyes as they said farewell (they said farewell)",
-      start: 136, end: 141.1,
-      targetFreq: 130.81, // C3
-    },
-    {
-      text: "But I'll know where several are",
-      start: 141.1, end: 144,
-      targetFreq: 146.83, // D3
-    },
-    {
-      text: "If my dreams get real bizarre",
-      start: 144, end: 146,
-      targetFreq: 138.59, // C#3
-    },
-    {
-      text: "'Cause I saved a few and I keep them in a jar (jar, jar)",
-      start: 146, end: 152,
-      targetFreq: 130.81, // C3
-    },
-
-    // ---- Final Chorus (x2) ----
-    {
-      text: "I'd like to make myself believe",
-      start: 152, end: 156.5,
-      targetFreq: 184.99, // F#3
-    },
-    {
-      text: "That planet Earth turns slowly",
-      start: 156.5, end: 162.1,
-      targetFreq: 207.65, // G#3
-    },
-    {
-      text: "It's hard to say that I'd rather stay awake when I'm asleep",
-      start: 162.1, end: 167,
-      targetFreq: 246.94, // B3
-    },
-    {
-      text: "'Cause everything is never as it seems (when I fall asleep)",
-      start: 167, end: 173,
-      targetFreq: 207.65, // G#3
-    },
-  ],
-};
-
-
-
-
-/*
-const FIREFLIES_DATA = {
-  audioSrc: "/fireflies.mp3",
-  minFreq: 220.00,   // A3
-  maxFreq: 493.88,   // B4
+  minFreq: 220.0,   // A3
+  maxFreq: 493.88,  // B4
 
   lines: [
     // ---- Verse 1 ----
@@ -474,7 +260,6 @@ const FIREFLIES_DATA = {
     },
   ],
 };
-*/
 
 function Home() {
   const [mode, setMode] = useState("solo");
@@ -537,7 +322,7 @@ function Play() {
 
   const mode = location.state?.mode || "solo";
   const selectedSong =
-  location.state?.selectedSong || "Twinkle Twinkle Little Star";
+    location.state?.selectedSong || "Twinkle Twinkle Little Star";
 
   let songData = TWINKLE_DATA;
 
@@ -550,6 +335,7 @@ function Play() {
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [score, setScore] = useState(0);
+  const [maxScore, setMaxScore] = useState(0); // NEW: track max possible score
 
   // Mic pitch detection state/refs
   const [userFreq, setUserFreq] = useState(null);
@@ -562,7 +348,7 @@ function Play() {
   const rafRef = useRef(null);
   const framesWithoutPitchRef = useRef(0);
   const streamRef = useRef(null);
-  const currentLineRef = useRef(null); // NEW: track current line for scoring
+  const currentLineRef = useRef(null); // track current line for scoring
 
   const handleBack = () => {
     navigate("/");
@@ -576,9 +362,10 @@ function Play() {
       audioEl.pause();
       setIsPlaying(false);
     } else {
-      // optional: reset score if starting from the beginning
+      // reset score if starting from the beginning
       if (audioEl.currentTime < 0.5) {
         setScore(0);
+        setMaxScore(0);
       }
       audioEl.play();
       setIsPlaying(true);
@@ -611,13 +398,17 @@ function Play() {
     barPercent = Math.min(100, Math.max(0, barPercent));
   }
 
-  // Grade based on score
+  // Normalized score + grade (length-independent)
+  const scoreRatio = maxScore > 0 ? score / maxScore : 0; // 0–1
+  const displayScore = Math.round(scoreRatio * 10000);    // 0–10000
+
   let grade = "—";
-  if (score > 8000) grade = "S";
-  else if (score > 6000) grade = "A";
-  else if (score > 4000) grade = "B";
-  else if (score > 2000) grade = "C";
-  else if (score > 500) grade = "D";
+  if (scoreRatio > 0.90) grade = "S";
+  else if (scoreRatio > 0.75) grade = "A";
+  else if (scoreRatio > 0.60) grade = "B";
+  else if (scoreRatio > 0.40) grade = "C";
+  else if (scoreRatio > 0.15) grade = "D";
+  else grade = "F";
 
   // Text labels for user pitch
   let pitchLabel = "";
@@ -730,11 +521,14 @@ function Play() {
               delta = 8;
             } else if (diffRatio < 0.30) {
               delta = 4;
+            } else {
+              delta = 0;
             }
 
-            if (delta > 0) {
-              setScore((prev) => prev + delta);
-            }
+            // Every scorable frame increases max possible score
+            setMaxScore((prev) => prev + 15);
+            // And we add whatever we actually earned
+            setScore((prev) => prev + delta);
           }
         } else {
           framesWithoutPitchRef.current += 1;
@@ -775,7 +569,7 @@ function Play() {
           <div className="score-panel">
             <h2>Score</h2>
             <p className="score-value">
-              {String(score).padStart(6, "0")}
+              {String(displayScore).padStart(6, "0")}
             </p>
             <p className="grade-label">Grade: {grade}</p>
           </div>
